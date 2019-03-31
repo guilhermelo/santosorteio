@@ -1,11 +1,10 @@
 // chama o controller
+let controller = require('./santo.controller');
 
 
 module.exports = function(router) {
 
-    router.get('/santos', (req, res) => {
-        res.json({
-            message: 'Mensagem de teste'
-        })
+    router.get('/', (req, res) => {
+        controller.findAll(req, res);
     });
 }
