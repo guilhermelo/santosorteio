@@ -1,12 +1,11 @@
 <div class="card-deck">
     <% for(santo of santos) { %>
-    <div class="card" style="width: 18rem">
-        <img src="<%= santo.imagem %>" class="card-img-top" alt="..." width="100px">
+    <div class="card">
         <div class="card-body">
             <h5 class="card-title"><%= santo.nome %></h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text">Portador: <%= santo.portador %></p>
+            <p class="card-text"><small class="text-muted">Último sorteio: <%= santo.ultimoSorteio %></small></p>
+            <a href="/api/sorteio/<%= santo.id %>" class="btn btn-primary">Sortear</a>
         </div>
     </div>
     <% } %>

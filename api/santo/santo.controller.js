@@ -1,9 +1,10 @@
 exports.findAll = (req, res) => {
     let santos = [
             {
+                id: 1,
                 nome: "Sagrada Família",
-                imagem: "https://img.cancaonova.com/cnimages/canais/uploads/sites/2/2013/12/sagrada-fam%C3%ADlia.jpg",
                 portador: "Camila",
+                ultimoSorteio: '22/01/2019',
                 integrantes: [
                     "Guilherme",
                     "Camila Oliveira",
@@ -12,9 +13,10 @@ exports.findAll = (req, res) => {
                 ]
             },
             {
+                id: 2,
                 nome: "Nossa Senhora de Fátima",
-                imagem: "imagem.jpg",
                 portador: "Maria",
+                ultimoSorteio: '29/01/2019',
                 integrantes: [
                     "Camila Oliveira",
                     "Matheus"
