@@ -8,7 +8,9 @@ module.exports = function(router) {
         controller.findAll(req, res);
     });
 
-    router.get('/sorteio/:id', (req, res) => {
+    router.get('/sortear/:id', (req, res) => {
         controller.sortition(req, res);
     });
+
+    return router;
 }

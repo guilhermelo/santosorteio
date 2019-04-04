@@ -1,0 +1,26 @@
+<h2 class="m-4">Cadatrado de ministros</h2>
+
+<form class="mb-4" method="POST" action="/sorteio/ministros/">
+    <div class="col-5">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome do ministro">
+        <button type="submit" class="btn btn-outline-success mt-2">Cadastrar</button>
+    </div>
+</form>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(ministro of ministros) { %>
+            <tr>
+                <td><%= ministro.nome %></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>

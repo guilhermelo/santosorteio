@@ -10,11 +10,13 @@ app.use(ejsLayouts);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 let router = express.Router();
-let santoRouter = require('./api/santo/santo.router');
+let santoRouter = require('./api/santo/santo.router')(router);
+let ministroRouter = require('./api/ministro/ministro.route')(router);
 
 
-app.use('/api', router);
-santoRouter(router);
+app.use('/sorteio', santoRouter);
+app.use('/ministros', ministroRouter);
+
 
 app.listen(3000, () => {
     console.log('Servidor no ar!');

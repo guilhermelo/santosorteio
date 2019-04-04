@@ -23,6 +23,25 @@ exports.findAll = (req, res) => {
                 "Camila Oliveira",
                 "Matheus"
             ]
+        },
+        {
+            id: 3,
+            nome: "Sagrado Coração de Maria",
+            imagem: "https://a-static.mlcdn.com.br/640x480/quadro-sagrado-coracao-de-maria-imaculada-mae-jesus-60x40-bimper/bimper/t0180h60x40chassi/3b6ccd526959eeb1cf82ad00377bac23.jpg",
+            portador: "Camila Dutra",
+            ultimoSorteio: '29/01/2019',
+            integrantes: [
+                "Guilherme",
+                "Camila Oliveira",
+                "João",
+                "Marcinho",
+                "Camila Dutra",
+                "Maria",
+                "Matheus",
+                "Amanda",
+                "Ana Amália",
+                "Mariana"
+            ]
         }
     ];
     res.render('pages/santos', { santos });
@@ -56,6 +75,25 @@ exports.sortition = (req, res) => {
             nome: "Nossa Senhora de Fátima",
             imagem: "https://mediablogs.arautos.org/fatima/files/2010/04/N-Sra-de-Fatima_1.jpg",
             portador: "Maria",
+            ultimoSorteio: '29/01/2019',
+            integrantes: [
+                "Guilherme",
+                "Camila Oliveira",
+                "João",
+                "Marcinho",
+                "Camila Dutra",
+                "Maria",
+                "Matheus",
+                "Amanda",
+                "Ana Amália",
+                "Mariana"
+            ]
+        },
+        {
+            id: 3,
+            nome: "Sagrado Coração de Maria",
+            imagem: "https://a-static.mlcdn.com.br/640x480/quadro-sagrado-coracao-de-maria-imaculada-mae-jesus-60x40-bimper/bimper/t0180h60x40chassi/3b6ccd526959eeb1cf82ad00377bac23.jpg",
+            portador: "Camila Dutra",
             ultimoSorteio: '29/01/2019',
             integrantes: [
                 "Guilherme",
