@@ -1,5 +1,6 @@
+
 module.exports = (router) => {
-    router.get('/', (req, res) => {
+    router.get('/ministros', (req, res) => {
         let ministros = [
             {
                 id: 1,
@@ -18,7 +19,7 @@ module.exports = (router) => {
         res.render('pages/ministros', { ministros });
     });
 
-    router.post('/', (req, res) => {
+    router.post('/ministros', (req, res) => {
         
         let ministro = {
             nome: req.body.nome,
@@ -26,7 +27,4 @@ module.exports = (router) => {
 
         // grava ministro no banco
     });
-
-
-    return router;
 }

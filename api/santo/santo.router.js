@@ -1,7 +1,6 @@
 // chama o controller
 let controller = require('./santo.controller');
 
-
 module.exports = function(router) {
 
     router.get('/', (req, res) => {
@@ -11,6 +10,4 @@ module.exports = function(router) {
     router.get('/sortear/:id', (req, res) => {
         controller.sortition(req, res);
     });
-
-    return router;
 }
