@@ -18,8 +18,9 @@ app.use('/', router);
 santoRouter(router);
 ministroRouter(router);
 
+let porta = process.env.PORT || 8080;
 
-app.listen(3000, () => {
+app.listen(porta, () => {
     console.log('Servidor no ar!');
 });
 
